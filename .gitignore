@@ -4,7 +4,7 @@ npm-debug.log
 .env
 .npm
 .DS_Store
-.idea/
+.idea/     
 
 
 ### Node ###
