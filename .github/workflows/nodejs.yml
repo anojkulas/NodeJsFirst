@@ -1,0 +1,20 @@
+name: Node CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [8.x, 10.x, 12.x]
+
+    steps:
+      - name: NodeJS Project Information
+        uses: gregoranders/nodejs-project-info@v0.0.1
+        with:
+          path: ./package.json 
+
+       
